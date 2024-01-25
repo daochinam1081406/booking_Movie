@@ -1,9 +1,10 @@
 import React from "react";
-import { ProgressBar } from "react-loader-spinner";
+import { Dna } from "react-loader-spinner";
 import { useSelector } from "react-redux";
 
 export default function Loading() {
-  let { isLoading } = useSelector((state) => state.spinnerSlice);
+  const { isLoading } = useSelector((state) => state.spinnerSlice);
+
   return isLoading ? (
     <div
       style={{
@@ -19,14 +20,11 @@ export default function Loading() {
         zIndex: 100,
       }}
     >
-      <ProgressBar
-        height='200'
-        width='200'
-        ariaLabel='progress-bar-loading'
-        wrapperStyle={{}}
-        wrapperClass='progress-bar-wrapper'
-        borderColor='#848482'
-        barColor='#FE5A1D'
+      <Dna
+        type="DNA" // Sử dụng kiểu DNA
+        color="#FE5A1D" // Màu sắc của thanh progress bar
+        height={200} // Chiều cao của thanh progress bar
+        width={200} // Chiều rộng của thanh progress bar
       />
     </div>
   ) : (

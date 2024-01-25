@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { NavLink, useNavigate } from "react-router-dom";
 import { localService } from "../apis/localService";
-import "./Header.module.scss";
+import "./Header.scss";
 
 export default function Header() {
   const { info } = useSelector((state) => state.userReducer);

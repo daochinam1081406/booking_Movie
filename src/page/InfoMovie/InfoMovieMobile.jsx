@@ -304,11 +304,7 @@ export default function InfoMovieMobile() {
         >
           <div className="container grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-5 md:grid-cols-4 md:gap-7 ">
             <div>
-              <img
-                src="../image/logo_movie.png"
-                className="mb-4 md:mt-8"
-                alt="..."
-              />
+              <img src="../Dicon.png" className="mb-4 md:mt-8" alt="..." />
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
