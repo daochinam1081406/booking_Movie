@@ -1,17 +1,17 @@
 import React from "react";
+import "./LatestNew.scss";
 
 export default function LatestNew() {
   return (
     <div id="news">
-      <div
-        style={{
-          background: `url(../image/news/bg_latestnew.png) `,
-        }}
-      >
-        <div style={{ minHeight: "250px" }} className="text-center">
+      <div>
+        <div
+          style={{ minHeight: "250px", borderRadius: 5 }}
+          className="text-center"
+        >
           <div className="container">
             <h1 className="font-semibold py-20 inline-block text-3xl text-orange-500">
-              Latest News
+              Tin tức mới nhất
             </h1>
           </div>
         </div>
@@ -20,11 +20,15 @@ export default function LatestNew() {
         <div className=" container">
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 lg:grid-rows-2 lg:gap-8">
             <div>
-              <img src="./image/news/new_1.jpg" loading="lazy" alt="..." />
+              <img
+                className="img_news"
+                src="./image/news/new_1.jpg"
+                loading="lazy"
+                alt="..."
+              />
               <div className="flex flex-col items-center">
                 <h3 className="font-bold text-center text-xl mb-4">
-                  Sáu cuốn sách được chuyển thể thành phim đáng mong đợi vào mùa
-                  thu này
+                  JackJustin Timberlake tái xuất
                 </h3>
                 <button className="px-3 py-1 rounded-2xl bg-orange-400 hover:bg-orange-600 text-white text-sm duration-300">
                   Xem thêm
@@ -33,15 +37,16 @@ export default function LatestNew() {
             </div>
             <div className="lg:row-span-2 lg:col-span-2">
               <img
+                className="img_news"
                 loading="lazy"
-                src="./image/news/new_2.jpg"
+                src="./image/news/new_5.png"
                 width={750}
                 height={500}
                 alt="..."
               />
               <div className="flex flex-col items-center">
                 <h3 className="font-bold text-center text-xl ">
-                  Giành được kỳ nghỉ ở Thế giới phù thủy với Fantastic
+                  Tin hot nhất về Taylor
                 </h3>
                 <p className="text-sm my-4">
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -53,10 +58,15 @@ export default function LatestNew() {
               </div>
             </div>
             <div>
-              <img loading="lazy" src="./image/news/new_3.jpg" alt="..." />
+              <img
+                className="img_news"
+                loading="lazy"
+                src="./image/news/new_3.png"
+                alt="..."
+              />
               <div className="flex flex-col items-center">
                 <h3 className="font-bold text-center text-xl mb-4">
-                  Doctor Strange hội ngộ với Avengers
+                  Cặp đôi hot công khai hẹn hò
                 </h3>
                 <button className="px-3 py-1 rounded-2xl bg-orange-400 hover:bg-orange-600 text-white text-sm duration-300">
                   Xem thêm
@@ -64,10 +74,15 @@ export default function LatestNew() {
               </div>
             </div>
             <div>
-              <img loading="lazy" src="./image/news/new_2.jpg" alt="..." />
+              <img
+                className="img_news"
+                loading="lazy"
+                src="./image/news/new_2.jpg"
+                alt="..."
+              />
               <div className="flex flex-col items-center">
                 <h3 className="font-bold text-center text-xl mb-4">
-                  The Beatles: Eight Days a Week – The Touring
+                  Sao 'Oppenheimer' không nghĩ có ngày được đề cử Oscar
                 </h3>
                 <button className="px-3 py-1 rounded-2xl bg-orange-400 hover:bg-orange-600 text-white text-sm duration-300">
                   Xem thêm
@@ -75,10 +90,15 @@ export default function LatestNew() {
               </div>
             </div>
             <div>
-              <img loading="lazy" src="./image/news/new_4.jpg" alt="..." />
+              <img
+                className="img_news"
+                loading="lazy"
+                src="./image/news/new_4.jpg"
+                alt="..."
+              />
               <div className="flex flex-col items-center">
                 <h3 className="font-bold text-center text-xl mb-4">
-                  5 bộ phim đáng xem tuần này
+                  Vẻ đẹp thiên thần diễn viên châu á
                 </h3>
                 <button className="px-3 py-1 rounded-2xl bg-orange-400 hover:bg-orange-600 text-white text-sm duration-300">
                   Xem thêm

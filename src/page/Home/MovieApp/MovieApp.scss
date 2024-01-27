@@ -1,0 +1,94 @@
+
+#movieapp {
+    position: relative;
+  
+    .background_content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      background: url(../../../../public/image/backapp.jpg) repeat-x center;
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 100vh; // Adjust as needed for your layout
+      padding: 0;
+      margin: 0;
+    }
+  
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .column {
+      flex: 1;
+      padding: 10px;
+    }
+  
+    .element {
+        color: white;
+      padding-bottom: 50px;
+      border: 1px solid #000;
+        
+      align-items: center;
+      justify-content: center;
+      h3 {
+        padding-bottom: 20px;
+        font-size: 24px; /* Đặt kích thước cho h3 */
+      }
+    
+      h5 {
+        padding-bottom: 20px;
+        font-size: 18px; /* Đặt kích thước cho h5 */
+      }
+       
+      h6 {
+        font-size: 14px; /* Đặt kích thước cho h6 */
+        padding-top: 20px;
+      }
+   
+    }
+  
+    .button {
+      background-color: #ac4b4b;
+      color:white;
+      padding: 10px;
+      border: 1px solid #000;
+      font-size: 20px;
+      border-radius: 8px;
+      &:hover {
+        background-color: #8a3535; /* Màu đậm hơn khi hover */
+      }
+       
+  
+
+    }
+    .iphone-icon-container {
+        position: relative;
+        max-width: 100%;
+      }
+  
+    .iphone-icon {
+      max-width: 100%;
+      height: 32rem;
+      width: 15rem;
+      background-image: url("../../../../public/image/iphone.png");
+      background-size: cover; /* hoặc thay đổi theo nhu cầu */
+      background-position: center; /* hoặc thay đổi theo nhu cầu */
+      background-repeat: no-repeat;
+      z-index: 2;
+      padding: 6px;
+      img{
+        border-radius: 22px;
+      }
+    
+    }
+  
+    @media (max-width: 600px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  }
+  

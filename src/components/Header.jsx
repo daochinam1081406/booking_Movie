@@ -6,7 +6,9 @@ import "./Header.scss";
 
 export default function Header() {
   const { info } = useSelector((state) => state.userReducer);
+
   let navigate = useNavigate();
+  const isAdmin = info && info.maLoaiNguoiDung === "QuanTri";
   let handleLogOut = () => {
     localService.remove();
   };
@@ -107,6 +109,11 @@ export default function Header() {
             <li>
               <a href="#footer">Liên hệ</a>
             </li>
+            {isAdmin && (
+              <li>
+                <a href="#">Admin</a>
+              </li>
+            )}
           </ul>
         </nav>
       </div>
